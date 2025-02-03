@@ -238,20 +238,33 @@ input[type=button] {cursor: pointer}
     }
   }
 
-  .infobox {
-    margin:20px;
-    border-radius: 10px;
-    background-color: white;
-    > img {
-      border-radius: 10px 10px 0px 0px;
-    }
-    > div {
-      margin:20px;
-    }
-    h3 {
-      font-family: "Montserrat SemiBold", sans-serif;
-      font-size:22px;
-      margin-bottom: 10px;
+  .blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:30px;
+    padding:30px;
+    .infobox {
+      @media (orientation: landscape) {
+        min-width: 40%;
+        flex-basis: 400px;
+        flex-grow: 1;
+      }
+      //margin:20px;
+
+      border-radius: 10px;
+      background-color: white;
+      > img {
+        border-radius: 10px 10px 0px 0px;
+      }
+      > div {
+        margin:20px;
+      }
+      h3 {
+        font-family: "Montserrat SemiBold", sans-serif;
+        font-size:22px;
+        margin-bottom: 10px;
+      }
     }
   }
 

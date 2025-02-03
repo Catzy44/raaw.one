@@ -184,17 +184,21 @@ function App() {
                         <h5>W kryzysowej sytuacji można na nas liczyć, nigdy nie wiesz kiedy los może odwrocić karty na drugą stronę</h5>
                     </div>
 
-                    {
-                        blocks.map((block, idx) => {
-                            return <div className={clsx(style.infobox, "m-px")} key={idx} id={block.id}>
-                                <img src={block.image} alt={`Ubezpieczenia ${block.title}`} loading="lazy"/>
-                                <div>
-                                    <h3>{block.title}</h3>
-                                    <h4>{block.content}</h4>
+                    <div className={style.blocks}>
+                        {
+                            blocks.map((block, idx) => {
+                                return <div className={clsx(style.infobox, "m-px")} key={idx} id={block.id}>
+
+                                    <img src={block.image} alt={`Ubezpieczenia ${block.title}`} loading="lazy"/>
+                                    <div>
+                                        <h3>{block.title}</h3>
+                                        <h4>{block.content}</h4>
+                                    </div>
+
                                 </div>
-                            </div>
-                        })
-                    }
+                            })
+                        }
+                    </div>
                     <div className={style.contact} id="contact">
                         <h2>Kontakt</h2>
 
