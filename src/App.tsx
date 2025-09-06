@@ -88,7 +88,7 @@ const blocks = [
         </>
     }, {
         id: "firmy",
-        image: imagesPath + "9.webp",
+        image: imagesPath + "10.webp",
         title: "Firmy",
         content: <>
             OC działalności gospodarczej -
